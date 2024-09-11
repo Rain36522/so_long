@@ -6,7 +6,7 @@
 #    By: pudry <pudry@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/31 08:09:16 by pudry             #+#    #+#              #
-#    Updated: 2024/09/11 13:50:54 by pudry            ###   ########.fr        #
+#    Updated: 2024/09/11 22:05:21 by pudry            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -49,7 +49,7 @@ lib :
 clean :
 	@rm -rf objet/
 	@make clean -C ft_printf/
-# @make clean -C mlx/
+	@make clean -C mlx/
 
 fclean : clean
 	@rm -f $(NAME)

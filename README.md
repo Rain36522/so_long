@@ -12,3 +12,7 @@ Because the minilibix is only available on unix system and the compilation betwe
 - **make re**: Runs make fclean and then make.
 - **make lib**: Compiles librairies.
 - **make header**: Prints a decorative header.
+
+## run
+run `./so_long <map>`
+For playing use (w, a, s, d or rows).
