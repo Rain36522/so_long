@@ -6,7 +6,7 @@
 #    By: pudry <pudry@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/31 08:09:16 by pudry             #+#    #+#              #
-#    Updated: 2024/09/11 22:05:21 by pudry            ###   ########.fr        #
+#    Updated: 2024/10/24 10:25:01 by pudry            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -64,6 +64,11 @@ objet/%.o: src/%.c
 objet/%.o: get_next_line/src/%.c
 	@mkdir -p $(dir $@)
 	@$(CC) $(FLAGS) -c $< -o $@ $(INCLUDES)
+
+init:
+	git submodule init
+	git submodule update
+	make init -C ft_printf
 
 header :
 	@echo "	      .-~~~-.        ${GREY}||${BLUE}::::::${RED}==========${WHITE}"
