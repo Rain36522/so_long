@@ -12,6 +12,7 @@ Because the minilibix is only available on unix system and the compilation betwe
 - **make re**: Runs make fclean and then make.
 - **make lib**: Compiles librairies.
 - **make header**: Prints a decorative header.
+- **make init**: Init submodules
 
 ## run
 run `./so_long <map>`
